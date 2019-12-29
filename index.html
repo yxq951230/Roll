@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自动滚动</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="jd_container nice-goods" aria-label="发现好货">
+    <a href="#" class="nice-goods_logo nice-goods_logo-bg-1">
+        <div class="logo-container">
+            <div class="logo-text">
+                探索新生活
+                <i class="jiantou01"></i>
+            </div>
+        </div>
+    </a>
+    <div class="images-and-scroll">
+        <div class="nice-goods_recommends" id="automatic">
+            <div style="width: 99999px">
+                <div class="goods-list" id="goods-list" style="position: relative;left: 0;">
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">黑街多功能变形轮滑鞋</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a72cf86Nc0bdfcb3.jpg!q70.jpg" alt="黑街多功能变形轮滑鞋" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/05088cf4612dc99c.jpg" alt="MAC 圣诞限量 口红套装" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">MAC 圣诞限量 口红套装</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">环境猫 小巧便携 检测仪</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/9ec8d31355c44409.png" alt="环境猫 小巧便携 检测仪" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a716ad2N3afe0948.png" alt="金士顿高稳定性U盘" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">金士顿高稳定性U盘</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">小米智能机顶盒</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/7834c3a9761f8385.jpg!q70.jpg" alt="小米智能机顶盒" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/1e6cde18031528db.jpg" alt="公牛 智能 插座" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">公牛 智能 插座</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">IDX高帮火烈鸟板鞋</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5aaa1734Ndfebe256.jpg!q70.jpg" alt="IDX高帮火烈鸟板鞋" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/1f9dcdbc6bd3a6d7.jpg" alt="史丹利 不锈钢 保温马克杯" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">史丹利 不锈钢 保温马克杯</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">3M呼气阀防雾霾口罩</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a71b624N2cc652fb.jpg!q70.jpg" alt="3M呼气阀防雾霾口罩" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a71cf79Ne9407815.jpg!q70.jpg" alt="Justice 板面" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">Justice 板面</div>
+                    </a>
+                </div>
+
+                <div class="goods-list" id="goods-list2">
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">黑街多功能变形轮滑鞋</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a72cf86Nc0bdfcb3.jpg!q70.jpg" alt="黑街多功能变形轮滑鞋" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/05088cf4612dc99c.jpg" alt="MAC 圣诞限量 口红套装" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">MAC 圣诞限量 口红套装</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">环境猫 小巧便携 检测仪</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/9ec8d31355c44409.png" alt="环境猫 小巧便携 检测仪" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a716ad2N3afe0948.png" alt="金士顿高稳定性U盘" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">金士顿高稳定性U盘</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">小米智能机顶盒</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/7834c3a9761f8385.jpg!q70.jpg" alt="小米智能机顶盒" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/1e6cde18031528db.jpg" alt="公牛 智能 插座" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">公牛 智能 插座</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">IDX高帮火烈鸟板鞋</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5aaa1734Ndfebe256.jpg!q70.jpg" alt="IDX高帮火烈鸟板鞋" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/1f9dcdbc6bd3a6d7.jpg" alt="史丹利 不锈钢 保温马克杯" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">史丹利 不锈钢 保温马克杯</div>
+                    </a>
+                    <a href="#" class="goods goods--bottom">
+                        <div class="goods_name">3M呼气阀防雾霾口罩</div>
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a71b624N2cc652fb.jpg!q70.jpg" alt="3M呼气阀防雾霾口罩" class="lazyimg_img">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="goods goods--top">
+                        <div class="goods_image">
+                            <div class="lazyimg lazyimg_loaded">
+                                <img src="img/5a71cf79Ne9407815.jpg!q70.jpg" alt="Justice 板面" class="lazyimg_img">
+                            </div>
+                        </div>
+                        <div class="goods_name">Justice 板面</div>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-bar">
+                <span class="scroll-points" id="out" style="transform: translate3d(787.987px,0px,0px);width: 99px;"></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+
+</html>

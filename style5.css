@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #c81623;
+}
+.jd_container{
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nice-goods{
+    height: 260px;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 190px;
+    margin-bottom: 20px;
+}
+.nice-goods_logo-bg-1{
+    background-image: url("img/disk.png");
+}
+.nice-goods_logo{
+     background-color: #eee;
+     background-size: 100% 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 190px;
+     height: 100%;
+     z-index: 10;
+ }
+.nice-goods_logo .logo-container{
+    width: 160px;
+    height: 90px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("img/Find-good-goods.png");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.logo-text{
+    color: rgba(255,255,255,.8);
+    font-size: 16px;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: block;
+}
+.logo-text i{
+    background-image: url("img/sprite.png");
+    background-position: 0 -16px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin-left: 2px;
+    margin-top: -3px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.nice-goods_logo:hover .jiantou01 {
+    background: url(img/sprite.png);
+    background-position: 0 0;
+    transition: background-position 0.5ms ease-in-out;
+}
+.nice-goods_recommends{
+    background-color: white;
+    overflow: hidden;
+}
+.nice-goods_recommends{
+    margin-left: 10px;
+    height: 100%;
+    position: relative;
+}
+.nice-goods_recommends .goods-list{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+/*    width: 100%;*/
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.nice-goods_recommends .goods-list .goods--bottom{
+    margin-top: 50px;
+}
+.nice-goods_recommends .goods-list .goods{
+    width: 150px;
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
+}
+.goods--bottom .goods_name{
+    margin-bottom: 10px;
+}
+.nice-goods_recommends .goods-list .goods_name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    transition: color .2s ease;
+    text-align: center;
+    font-size: 14px;
+}
+.goods-list {
+    float: left;
+    width: auto;
+}
+.goods-list .goods_image{
+    transition: opacity .2s ease;
+}
+.nice-goods_recommends .goods-list .goods_image{
+    height: 150px;
+}
+.lazyimg_loaded{
+    transition: background .2s linear,opacity .2s linear!important;
+    background: transparent;
+}
+.lazyimg{
+    position: relative;
+    overflow: hidden;
+}
+.goods_image .lazyimg_img{
+    width: 100%;
+    height: 100%;
+}
+.lazyimg_loaded .lazyimg_img{
+    opacity: 1;
+}
+.nice-goods_recommends .goods-list .goods--top{
+    margin-top: 20px;
+}
+.nice-goods_recommends .goods-list .goods--top .goods_name{
+    margin-top: 10px;
+}
+.nice-goods_recommends .scroll-bar{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    height: 3px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    opacity: 0;
+    transition: opacity .3s ease;
+    visibility: hidden;
+}
+.nice-goods_recommends .scroll-bar .scroll-points{
+    width: 33px;
+    height: 9px;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.5px;
+}
+.nice-goods_recommends:hover .scroll-bar{
+    opacity: 1;
+    visibility: visible;
+}
+.images-and-scroll {
+    position: relative;
+}
+.nice-goods_recommends .goods-list .goods:hover .goods_name{
+    color: #e1251b;
+}
+.nice-goods_recommends .goods-list .goods:hover .goods_image{
+    opacity: .8;
+}
